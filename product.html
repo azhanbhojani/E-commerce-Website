@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+  <link rel="icon" type="image" href="pics/sports-store-logo-template-vector-removebg-preview.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick slider css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background image styling */
+        body {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .product-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* To make sure text is visible over the background */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+          <div class="container-fluid">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+              <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <label class="logo text-white" id="name"><a href="home.html">𝐖.𝐒.𝐆</a></label>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto ">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="product.html">Products</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link mx-2" href="#">
+                    <img src="pics/sports-store-logo-template-vector-removebg-preview.png" height="80" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="brands.html">Brands</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop By Sport
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+                    <li><a class="dropdown-item" href="football.html">FootBall</a></li>
+                    <li><a class="dropdown-item" href="basketball.html">BasketBall</a></li>
+                    <li><a class="dropdown-item" href="baseball.html">BaseBall</a></li>
+                    <li><a class="dropdown-item" href="badminton.html">Badminton</a></li>
+                    <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+                    <li><a class="dropdown-item" href="tt.html">Table Tennis</a></li>
+                    <li><a class="dropdown-item" href="Snooker.html">Snooker</a></li>
+                    <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Sports Products</h1>
+        
+
+        <div class="row">
+            <!-- Cricket -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://static-01.daraz.pk/p/79bf602526a780e0265de9677ccf7c0c.jpg" class="card-img-top product-image" alt="Cricket Kit">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cricket Kit</h5>
+                        <p class="card-text">High-quality cricket kit for professionals.</p>
+                        <p class="price text-success">$99.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Football -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://cdn.britannica.com/51/190751-131-B431C216/soccer-ball-goal.jpg" class="card-img-top product-image" alt="Football">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Football</h5>
+                        <p class="card-text">Premium football for outdoor and indoor play.</p>
+                        <p class="price text-success">$39.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Basketball -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://images.pexels.com/photos/358042/pexels-photo-358042.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top product-image" alt="Basketball">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Basketball</h5>
+                        <p class="card-text">Official-sized basketball for all courts.</p>
+                        <p class="price text-success">$29.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baseball -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://m.media-amazon.com/images/I/51-ahdwT3GS.jpg" class="card-img-top product-image" alt="Baseball">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Baseball Set</h5>
+                        <p class="card-text">Complete baseball set for players of all levels.</p>
+                        <p class="price text-success">$49.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badminton -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://img.drz.lazcdn.com/static/pk/p/daacde78035688c78059057ac27315a5.jpg_720x720q80.jpg" class="card-img-top product-image" alt="Badminton Set">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Badminton Set</h5>
+                        <p class="card-text">Professional badminton set with rackets and shuttlecocks.</p>
+                        <p class="price text-success">$29.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tennis -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/best-tennis-rackets-cnnu.jpg?c=16x9&q=h_833,w_1480,c_fill" class="card-img-top product-image" alt="Tennis Racket">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tennis Racket</h5>
+                        <p class="card-text">Lightweight tennis racket for competitive play.</p>
+                        <p class="price text-success">$59.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Tennis -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://prospin.net/cdn/shop/files/B078XKSQ41.MAIN_b5b4f037-83b4-4922-87bf-d44f1bede0fa.jpg?v=1720446709&width=1080" class="card-img-top product-image" alt="Table Tennis">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Table Tennis Set</h5>
+                        <p class="card-text">Complete table tennis set with rackets and balls.</p>
+                        <p class="price text-success">$24.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snooker -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-3d8RYBDT2dW7SjJ0Py5XYNxwUTrH8TvZg&s" class="card-img-top product-image" alt="Snooker Set">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Snooker Set</h5>
+                        <p class="card-text">High-quality snooker set for enthusiasts.</p>
+                        <p class="price text-success">$79.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swimming -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfay0uAepBIDs3LDAyEJE_4qE82lqCCyT5A&s" class="card-img-top product-image" alt="Swimming Gear">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Swimming Gear</h5>
+                        <p class="card-text">Complete swimming kit for professionals.</p>
+                        <p class="price text-success">$49.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- Footer Start -->
+  <div class="maindiv">
+    <footer>
+      <div class="cont">
+        <div class="row">
+          <div class="col" id="brand">
+            <img src="pics/sports-store-logo-template-vector-removebg-preview.png" alt="logo" class="logo" width="">
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Discover a world of premium sports goods and accessories at W.S.G, where our commitment to excellence
+              extends beyond products. Our services are tailored to enhance your sporting experience, ensuring you find
+              the perfect gear to elevate your game.
+            </p>
+
+          </div>
+          <div class="col" id="contact">
+            <h3>Contacts</h3>
+            <div class="contact-details">
+              <i class="fa fa-location"></i>
+              <p>Aptech Apwa Center Garden  <br> East Saddar Town, Karachi.</p>
+            </div>
+            <br>
+            <div class="contact-details">
+              <i class="fa fa-phone"></i>
+              <p>+9100000001</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="footerbottom mt-5">
+        <p>Copyright &copy;2023; <span class="designer">All Rights Reserved To W.S.B</span></p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+  </script>
+<!-- jquery cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- javascript cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- slick slider js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="home.js"></script>
+</body>
+</html>

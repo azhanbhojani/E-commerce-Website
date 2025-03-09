@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Swimming Products</title>
+  <link rel="icon" type="image" href="pics/sports-store-logo-template-vector-removebg-preview.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick slider css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- cloudflare -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    #headerNav {
+      background-color: #ff6f00;
+    }
+    #name a{
+    text-decoration: none;
+    color: white;
+  }
+  #name a:hover{
+    opacity: 0.5;
+  }
+    @media screen and (min-width:992px) {
+      .nav-item {
+        line-height: 80px;
+      }
+
+      .banner_slider .slide {
+        padding: 0 24px;
+      }
+
+      .slide_content {
+        max-width: 100%;
+        padding: 10px 10px 0 10px;
+        border-width: 2px 2px 0 2px;
+        text-align: center;
+      }
+
+      .slide_content p {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .slide_content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 10px 0;
+      }
+
+      .slide_content .btn {
+        padding: 8px 24px;
+        font-size: 14px;
+      }
+
+      .banner_slider .slick-arrow span {
+        font-size: 25px;
+        padding: 5px;
+      }
+    }
+
+    @media screen and (min-width:414px) {
+
+      /* .button_wrap{
+      max-width: 200px;
+      margin: 0 auto;
+    } */
+      .slide_content .btn {
+        display: block;
+        width: auto;
+      }
+
+      /* .slide_content .btn_transparent{
+      margin-right: 0px;
+      margin-bottom: 10px;
+    } */
+    }
+
+    .dropdown-menu li {
+      position: relative;
+      gap: 0.5rem;
+      line-height: 2;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #ff6f00;
+    }
+
+    .animation {
+      animation: change 10s infinite;
+    }
+
+    #cover {
+      border-radius: 5rem;
+    }
+
+    .logo {
+      font-size: xx-large;
+      margin-left: 30px;
+    }
+
+    .banner_slider .slide {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/pexels-pixabay-46798.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+    }
+
+    .banner_slider .slide_two {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/pexels-guduru-ajay-bhargav-863988.jpg);
+    }
+
+    .banner_slider .slide_three {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/pexels-sasha-elaizz-1332237.jpg);
+    }
+
+    .slide_content {
+      color: #fff;
+      max-width: 650px;
+      padding: 25px 25px 0 25px;
+      border-width: 4px 4px 0 4px;
+      border-color: #ff6f00;
+      border-style: solid;
+      margin-top: 90px;
+
+    }
+
+    .slide_content p {
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .slide_content h2 {
+      font-size: 60px;
+      line-height: 76px;
+      margin: 25px 0;
+    }
+
+    .slide_content .btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: transparent;
+      padding: 10px 42px;
+      font-weight: 700px;
+      display: inline-block;
+      outline: 1px solid #ffF;
+      transition: 0.3s ease-in-out;
+    }
+
+    .slide_content .btn:hover {
+      background-color: #ff6f00;
+      color: #fff;
+      outline-color: #ff6f00;
+      outline-offset: 3px;
+    }
+
+    .slide_content .btn_transparent {
+      background-color: transparent;
+      border-color: #fff;
+      margin-right: 20px;
+      outline-color: #fff;
+    }
+
+    .slide_content .btn_transparent:hover {
+      background-color: #ff6f00;
+      color: #fff;
+      outline-color: #ff6f00;
+    }
+
+    .banner_slider.slick-slider {
+      margin-bottom: 0;
+    }
+
+    .banner_slider .slick-dots {
+      width: 100%;
+      bottom: 6%;
+    }
+
+    .banner_slider .slick-dots li button::before {
+      font-size: 16px;
+      color: #ff6f00;
+    }
+
+    .banner_slider .slick-dots li {
+      margin: 0 3px;
+    }
+
+    .banner_slider .slick-dots li.slick-active button::before {
+      opacity: 1;
+      color: #ff6f00;
+    }
+
+    .banner_slider .slick-arrow.prev {
+      left: 0;
+    }
+
+    .banner_slider .slick-arrow.next {
+      right: 0;
+    }
+
+    .banner_slider .slick-arrow {
+      position: absolute;
+      top: 50%;
+      display: block;
+      z-index: 9;
+      transform: translate(0, -50%);
+      cursor: pointer;
+    }
+
+    .banner_slider .slick-arrow span {
+      color: #fff;
+      font-size: 50px;
+      padding: 8px;
+    }
+    body{
+      margin: 0;
+      font-family: sans-serif;
+      
+      background-color: #D5D8DC;
+    }
+    
+
+
+    h3{
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      padding-top: 10px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .gallery{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+    }
+    .content{
+      width: 20%;
+      margin: 15px;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+      border-radius: 20px;
+      cursor: pointer;
+      padding-top: 10px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10 10px rgba(0, 0, 0, 0.22);
+      transition: .4s;
+      background: #f2f2f2;
+    }
+    .content:hover{
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: translate(0px, -8px);
+    }
+    #img1{
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
+    #p1{
+      text-align: center;
+      color: #b2bec3;
+      padding-top: 0 8px;
+    }
+    h6{
+      font-size: 26px;
+      text-align: center;
+      color: #222f3e;
+      margin: 0;
+    }
+    #cardul1{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+    #cardli1{
+      padding-top: 5px;
+    }
+    .fa{
+      font-size: 26px;
+      transition: .4s;
+      margin: 3px;
+    }
+    .checked{
+      color: #ff6f00;
+    }
+    .fa:hover{
+      transform: scale(1.3);
+      transition: .6s;
+    }
+    button{
+      text-align: center;
+      font-size: 24px;
+      color: black;
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      margin-top: 5px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .buy-1{
+      background-color: #FDEBD0 ;
+    }
+    .buy-1:hover{
+      background-color: #FAD7A0;
+    }
+    .buy-2{
+      background-color: #FDEBD0 ;
+    }
+    .buy-2:hover{
+      background-color: #FAD7A0;
+    }
+    .buy-3{
+      background-color: #FDEBD0 ;
+    }
+    .buy-3:hover{
+      background-color: #FAD7A0;
+    }
+    @media(max-width:1000px){
+      .content{
+        width: 45%;
+      }
+    }
+    @media(max-width:750px){
+      .content{
+        width: 100%;
+      }
+    }.maindiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer{
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+.cont{
+    max-width: 1149px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color: #f2f2f2f2;
+    font-family: poppins;
+    padding: 0 2rem;
+}
+.col .logo{
+    width: 100;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+.col h3{
+    color: orangered;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.col h3:hover::after{
+     width: 30px;
+}
+.col .social a i{
+    color: orangered;
+    margin-top: 2rem;
+    margin-right: 20px;
+
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    color: orange;
+    filter: drop-shadow(25)
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color: #f2f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: orangered;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color: orange;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+.col .contact-details i{
+    margin-right: 15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.row .form input{
+    background-color: #1a1c20ff;
+    border: 0;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+}
+.form button{
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: orangered;
+
+}
+.footerbottom{
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.footerbottom p{
+    color: black;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* responsive design */
+/* @media(max-width:90px){
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+@media(max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+} */
+  </style>
+
+</head>
+
+<body>
+  <div class="animation">
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <label class="logo text-white" id="name"><a href="home.html">𝐖.𝐒.𝐆</a></label>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="product.html">Products</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link mx-2" href="#">
+                <img src="pics/sports-store-logo-template-vector-removebg-preview.png" height="80" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="brands.html">Brands</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Shop By Sport
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="cricket.html">Cricket</a></li>
+                <li><a class="dropdown-item" href="football.html">FootBall</a></li>
+                <li><a class="dropdown-item" href="basketball.html">BasketBall</a></li>
+                <li><a class="dropdown-item" href="baseball.html">BaseBall</a></li>
+                <li><a class="dropdown-item" href="badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="tt.html">Table Tennis</a></li>
+                <li><a class="dropdown-item" href="Snooker.html">Snooker</a></li>
+                <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <center>
+      <h1><b><span class="cric">Arena</span> Products</b></h1>
+      <hr>
+    </center>
+    <div class="gallery">
+
+      <div class="content">
+        <img src="pics/Sporting Brands PIctures/Swimming/Arena Airplug.png" alt="" id="img1">
+        <h3>Ear Plug</h3>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+        <h6>$20.00</h6>
+        <ul id="cardul1">
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star "></i></li>
+          <li id="cardli1"><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+      </div>
+
+      <div class="content">
+        <img src="pics/Sporting Brands PIctures/Swimming/Arena Bag.jpg" alt="" id="img1">
+        <h3>Bag</h3>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+        <h6>$52.00</h6>
+        <ul id="cardul1">
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-2">Buy Now</button>
+      </div>
+
+      <div class="content">
+        <img src="pics/Sporting Brands PIctures/Swimming/Arena Cap.jpg" alt="" id="img1">
+        <h3>Cap</h3>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+        <h6>$31.00</h6>
+        <ul id="cardul1">
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star checked"></i></li>
+          <li id="cardli1"><i class="fa fa-star "></i></li>
+        </ul>
+        <button class="buy-3">Buy Now</button>
+      </div>
+      <br>
+      <div class="gallery">
+
+        <div class="content">
+          <img src="pics/Sporting Brands PIctures/Swimming/Arena Goggles.jpg" alt="" id="img1">
+          <h3>Goggles</h3>
+          <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+          <h6>$40.00</h6>
+          <ul id="cardul1">
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star "></i></li>
+          </ul>
+          <button class="buy-1">Buy Now</button>
+        </div>
+  
+        <div class="content">
+          <img src="pics/Sporting Brands PIctures/Swimming/Arena Kickboard.jpg" alt="" id="img1">
+          <h3>Kick Board</h3>
+          <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+          <h6>$45.00</h6>
+          <ul id="cardul1">
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star "></i></li>
+            <li id="cardli1"><i class="fa fa-star "></i></li>
+          </ul>
+          <button class="buy-2">Buy Now</button>
+        </div>
+  
+        <div class="content">
+          <img src="pics/Sporting Brands PIctures/Swimming/Arena Shorts.jpg" alt="" id="img1">
+          <h3>Shorts</h3>
+          <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+          <h6>$56.00</h6>
+          <ul id="cardul1">
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star checked"></i></li>
+            <li id="cardli1"><i class="fa fa-star "></i></li>
+          </ul>
+          <button class="buy-3">Buy Now</button>
+        </div>
+        <br>
+        <section>
+        <center>
+          <br>
+          <br>
+          <h1><b><span class="cric">Speedo</span> Products</b></h1>
+          <hr>
+        </center>
+        <div class="gallery">
+
+          <div class="content">
+            <img src="pics/Sporting Brands PIctures/Swimming/Speedo Bag.jpg" alt="" id="img1">
+            <h3>Bag</h3>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+            <h6>$60.00</h6>
+            <ul id="cardul1">
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star "></i></li>
+              <li id="cardli1"><i class="fa fa-star "></i></li>
+            </ul>
+            <button class="buy-1">Buy Now</button>
+          </div>
+    
+          <div class="content">
+            <img src="pics/Sporting Brands PIctures/Swimming/Speedo Cap.jpg" alt="" id="img1">
+            <h3>Cap</h3>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+            <h6>$30.00</h6>
+            <ul id="cardul1">
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star "></i></li>
+            </ul>
+            <button class="buy-2">Buy Now</button>
+          </div>
+    
+          <div class="content">
+            <img src="pics/Sporting Brands PIctures/Swimming/Speedo earplug.jpg" alt="" id="img1">
+            <h3>Ear Plug</h3>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+            <h6>$20.00</h6>
+            <ul id="cardul1">
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star checked"></i></li>
+              <li id="cardli1"><i class="fa fa-star "></i></li>
+              <li id="cardli1"><i class="fa fa-star "></i></li>
+            </ul>
+            <button class="buy-3">Buy Now</button>
+           </div>
+          </div>
+        
+          <div class="gallery">
+
+            <div class="content">
+              <img src="pics/Sporting Brands PIctures/Swimming/Speedo Footwear.jpg" alt="" id="img1">
+              <h3>Shoes</h3>
+              <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+              <h6>$98.00</h6>
+              <ul id="cardul1">
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star"></i></li>
+              </ul>
+              <button class="buy-1">Buy Now</button>
+            </div>
+      
+            <div class="content">
+              <img src="pics/Sporting Brands PIctures/Swimming/Speedo Goggles.jpg" alt="" id="img1">
+              <h3>Goggles</h3>
+              <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+              <h6>$34.00</h6>
+              <ul id="cardul1">
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star "></i></li>
+              </ul>
+              <button class="buy-2">Buy Now</button>
+            </div>
+      
+            <div class="content">
+              <img src="pics/Sporting Brands PIctures/Swimming/Speedo Nose Clip.jpg" alt="" id="img1">
+              <h3>Nose Clip</h3>
+              <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo!</p>
+              <h6>$14.00</h6>
+              <ul id="cardul1">
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star checked"></i></li>
+                <li id="cardli1"><i class="fa fa-star "></i></li>
+                <li id="cardli1"><i class="fa fa-star "></i></li>
+              </ul>
+              <button class="buy-3">Buy Now</button>
+            </div>
+          </div>
+          </section>
+          <!-- footer start -->
+          <div class="maindiv">
+            <footer>
+              <div class="cont">
+                <div class="row">
+                  <div class="col" id="brand">
+                    <img src="pics/sports-store-logo-template-vector-removebg-preview.png" alt="logo" class="logo" width="">
+                    <div class="social">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+        
+                  <div class="col" id="services">
+                    <h3>Services</h3>
+                    <p>Discover a world of premium sports goods and accessories at W.S.G, where our commitment to excellence
+                      extends beyond products. Our services are tailored to enhance your sporting experience, ensuring you find
+                      the perfect gear to elevate your game.
+                    </p>
+        
+                  </div>
+                  <div class="col" id="contact">
+                    <h3>Contacts</h3>
+                    <div class="contact-details">
+                      <i class="fa fa-location"></i>
+                      <p>Aptech Apwa Center Garden  <br> East Saddar Town, Karachi.</p>
+                    </div>
+                    <br>
+                    <div class="contact-details">
+                      <i class="fa fa-phone"></i>
+                      <p>+9100000001</p>
+                    </div>
+                  </div>
+        
+        
+                </div>
+              </div>
+              <div class="footerbottom mt-5">
+                <p>Copyright &copy;2023; <span class="designer">All Rights Reserved To W.S.B</span></p>
+              </div>
+            </footer>
+            <!-- footer end -->
+          </div>
+          <center>
+            <h2 class="mt-3">Thankyou For Choosing Us!</h2>
+          </center>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+    <!-- jquery cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- javascript cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick slider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
