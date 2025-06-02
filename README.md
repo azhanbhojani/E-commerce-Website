@@ -50,7 +50,7 @@ This is a responsive and functional e-commerce frontend for selling **sports equ
   - Image  
   - Title  
   - Short description  
-  - Price (if included)  
+  - Price 
   - Action buttons: `Buy Now`, `Add to Cart` (UI only)
 
 ### 📄 Product Catalog
